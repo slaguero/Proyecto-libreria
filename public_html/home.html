@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú desplegable</title>
+  <link rel="stylesheet" href="styles/csshome.css">
+  <script src="jshome.js"></script>
+</head>
+<header>
+     <div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			Gestion Libreria
+		</text>
+	</svg>
+      </div> 
+</header>
+   
+ 
+       
+<body>
+    
+    <header><h1> Bienvenido, ¿Que haremos Hoy?</h1></header>
+    
+  
+  <nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a class='dropdown-arrow' href='http://'>Registrar</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Nuevo Libro</a></li>
+        <li><a href='http://'>Nuevo Cliente</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' href='http://'>Eliminar</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Libro</a></li>
+        <li><a href='http://'>Cliente</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' href='http://'>Buscar existencia</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Cliente</a></li>
+        <li><a href='http://'>Libro</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' href='http://'>Detalles</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Libros vendidos</a></li>
+        <li><a href='http://'>Libros en reserva</a></li>
+        <li><a href='http://'>Libro</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' href='http://'>Editar</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Cliente</a></li>
+        <li><a href='http://'>Libro</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+   
+</html>

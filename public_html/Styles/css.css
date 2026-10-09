@@ -13,6 +13,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -20,28 +21,43 @@ body {
 ul {
   
     list-style: none;
-    padding: 0;
-    width: 200px; /* Ancho deseado para la lista */
-    margin: 50%; /* Centra la lista horizontalmente */
+    width: 10px; /* Ancho deseado para la lista */
+    margin: 55%; /* Centra la lista horizontalmente */
     position: absolute;
-    top: -50%; /* Centra la lista verticalmente */
-    transform: translateY(100%);
+    top: -75%; /* Centra la lista verticalmente */
+    transform: translateY(50%);
+    transform: translatex(-350%);
+    
 }
-
+img{
+    margin: 68%; /* Centra  zontalmente */
+    position: absolute;
+    top: -94%; /* Centra verticalmente */
+    transform: translatex(-117%);
+}
 /* Estilos para los elementos de la lista (li) */
 li {
-    margin-bottom: 10px;
+    font-family: cursive;
+    margin-bottom: 0px;
+    font-size: 40px;
+    
+    
 }
+
 
 /* Estilos para los enlaces (a) */
 a {
+    
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
+    
+   
 }
 
 a:hover {
     color: #CD8719;
+    
 }
 
     
@@ -76,8 +92,39 @@ svg text {
 	}
 }
 .wrapper {background-color: #FFFFFF};
+/*carga*/
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    display: grid;
+}
+.custom-loader::before,
+.custom-loader::after {    
+    content:"";
+    grid-area: 1/1;
+    --c: radial-gradient(farthest-side,#EB9FF4 92%,#0000);
+    background: 
+      var(--c) 50%  0, 
+      var(--c) 50%  100%, 
+      var(--c) 100% 50%, 
+      var(--c) 0    50%;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    animation: s2 2s infinite;
+}
+.custom-loader::before {
+  margin:4px;
+  filter:hue-rotate(45deg);
+  background-size: 8px 8px;
+  animation-timing-function: linear
+}
+
+@keyframes s2{ 
+  100%{transform: rotate(.5turn)}
+}
 
 /*///////////Foother /////////////// */
+
 
 
 
